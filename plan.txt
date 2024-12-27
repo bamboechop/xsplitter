@@ -1,0 +1,35 @@
+# xsplitter
+
+## Prerequisites
+
+This project uses Vue 3 with TypeScript, Tailwind for styling, ESLint for lintingd and Pinia for state management. It is intended to be a single page, no router needed. The project should only offer a dark mode. Anything written to Pinia should be persisted in the browser's local storage.
+
+Feel free to explain each of your steps when building this project. There is no need to be short, just be precise with your explanations.
+
+## Project structure
+
+- src/assets/base.css: Base styles for the project.
+- src/App.vue: Main component for the project.
+- src/main.ts: Entry point for the project.
+- src/components: Components for the project.
+- src/stores: Stores for the project.
+- src/views: Views for the project.
+
+## Rules
+
+- All new components should be added to src/components and named like example-component.vue unless otherwise specified.
+- All new stores should be added to src/stores and named like example.store.ts unless otherwise specified.
+
+## What xsplitter should do, this is your job
+
+When the user opens xsplitter, they should be greeted with a split UI. On the left side, they should see a textbox where they can enter any text they'd like to split. The textbox should have a placeholder (or label, use what is best in a11y terms) that says "Enter text to split".
+Beneath the textbox, there should be a counter that shows the number of characters the user has entered. There also should be a button that says "Split text".
+
+The text should be split by the following rules:
+
+- The text should be split into chunks of between 200 characters minimum and 280 characters maximum.
+- At the end of each chunk, the following should be added:
+  - "(x/y)" where x is the number of the chunk and y is the total number of chunks. This has to be considered in the 280 character limit!
+- If possible, sentences should be kept intact. If necessary, try to split the text after a sentence ends or is split by a comma. Only consider splitting in a sentence if absolutely necessary.
+
+On the right side, there should be cards. Each card should show a split chunk of the text. The right side should overflow and allow the user to scroll when it is higher than the viewport. Each card should have a "Copy text" button. When this button is pressed, a green tag saying "Copied" should be shown on the card. This tag doesn't need to disappear. The copy button should still be visible though and allow the user to copy the text again.
