@@ -7,8 +7,7 @@
 
 A modern web application for intelligently splitting long text into smaller, shareable chunks while preserving readability.
 
-<!-- Add a demo GIF or screenshot here -->
-<!-- ![xsplitter demo](./docs/demo.gif) -->
+![xsplitter demo](./public/demo.gif)
 
 ## Features
 
